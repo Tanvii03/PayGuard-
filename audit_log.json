@@ -1,0 +1,222 @@
+[
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_001",
+    "user_id": "usr_94812",
+    "amount": 3200.0,
+    "failure_reason": "BANK_SERVER_DOWN",
+    "intervention_selected": "SCHEDULE_AUTO_RETRY",
+    "retry_count": 0,
+    "status": "RECOVERED",
+    "audit_note": "SCHEDULE_AUTO_RETRY: Configured 6-hour cooldown timer. Re-routed transaction via secondary gateway API switch. Re-authorization confirmed."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_002",
+    "user_id": "usr_73219",
+    "amount": 12450.0,
+    "failure_reason": "GATEWAY_TIMEOUT",
+    "intervention_selected": "SCHEDULE_AUTO_RETRY",
+    "retry_count": 1,
+    "status": "RECOVERED",
+    "audit_note": "SCHEDULE_AUTO_RETRY: Configured 6-hour cooldown timer. Re-routed transaction via secondary gateway API switch. Re-authorization confirmed."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_003",
+    "user_id": "usr_88204",
+    "amount": 4800.0,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "intervention_selected": "SEND_WHATSAPP_PAYMENT_LINK",
+    "retry_count": 0,
+    "status": "RECOVERED",
+    "audit_note": "SEND_WHATSAPP_PAYMENT_LINK: Dispatched dynamic 1-click Razorpay payment link via WhatsApp. Aligned with salary cycle (Day 1). Customer authorized payment."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_004",
+    "user_id": "usr_45129",
+    "amount": 18990.0,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "intervention_selected": "SEND_WHATSAPP_PAYMENT_LINK",
+    "retry_count": 1,
+    "status": "PENDING_USER_RESPONSE",
+    "audit_note": "SEND_WHATSAPP_PAYMENT_LINK: Dispatched dynamic 1-click retry link via WhatsApp. Awaiting customer authorization after salary credit."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_005",
+    "user_id": "usr_61034",
+    "amount": 999.0,
+    "failure_reason": "EXPIRED_MANDATE",
+    "intervention_selected": "TRIGGER_HINGLISH_VOICE_CALL",
+    "retry_count": 0,
+    "status": "RECOVERED",
+    "audit_note": "TRIGGER_HINGLISH_VOICE_CALL: Deployed Razorpay AI Voice Agent (Hinglish). Customer successfully guided through mandate/card credentials re-linking."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_006",
+    "user_id": "usr_29481",
+    "amount": 2499.0,
+    "failure_reason": "CARD_EXPIRED",
+    "intervention_selected": "TRIGGER_HINGLISH_VOICE_CALL",
+    "retry_count": 1,
+    "status": "PENDING_USER_RESPONSE",
+    "audit_note": "TRIGGER_HINGLISH_VOICE_CALL: Voice call initiated; customer requested SMS link to complete card verification manually. Awaiting response."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_007",
+    "user_id": "usr_90518",
+    "amount": 6750.0,
+    "failure_reason": "CHECKOUT_ABANDONED",
+    "intervention_selected": "DISPATCH_SMS_REMINDER",
+    "retry_count": 0,
+    "status": "RECOVERED",
+    "audit_note": "DISPATCH_SMS_REMINDER: Dispatched interactive SMS recovery reminder with 15-minute cart reservation token. Customer completed checkout session."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_008",
+    "user_id": "usr_38472",
+    "amount": 1299.0,
+    "failure_reason": "CHECKOUT_ABANDONED",
+    "intervention_selected": "DISPATCH_SMS_REMINDER",
+    "retry_count": 1,
+    "status": "RECOVERED",
+    "audit_note": "DISPATCH_SMS_REMINDER: Dispatched interactive SMS recovery reminder with 15-minute cart reservation token. Customer completed checkout session."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_009",
+    "user_id": "usr_10928",
+    "amount": 42000.0,
+    "failure_reason": "B2B_OVERDUE_INVOICE",
+    "intervention_selected": "PROMISE_TO_PAY_TRACKER",
+    "retry_count": 0,
+    "status": "RECOVERED",
+    "audit_note": "PROMISE_TO_PAY_TRACKER: Automated corporate ERP payment reminder dispatched. Buyer accounts payable confirmed Promise-to-Pay and cleared invoice."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_010",
+    "user_id": "usr_57291",
+    "amount": 38500.0,
+    "failure_reason": "B2B_OVERDUE_INVOICE",
+    "intervention_selected": "PROMISE_TO_PAY_TRACKER",
+    "retry_count": 1,
+    "status": "PENDING_USER_RESPONSE",
+    "audit_note": "PROMISE_TO_PAY_TRACKER: Follow-up notice logged. Corporate accounts payable confirmed receipt; settlement processing."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_011",
+    "user_id": "usr_82910",
+    "amount": 8500.0,
+    "failure_reason": "BANK_SERVER_DOWN",
+    "intervention_selected": "HARD_STOP_MAX_RETRIES_EXCEEDED",
+    "retry_count": 2,
+    "status": "UNRECOVERABLE",
+    "audit_note": "HARD_STOP_MAX_RETRIES_EXCEEDED: Transaction has reached 2 attempts (limit is 2). Processing permanently halted."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_012",
+    "user_id": "usr_64019",
+    "amount": 5200.0,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "intervention_selected": "HARD_STOP_MAX_RETRIES_EXCEEDED",
+    "retry_count": 3,
+    "status": "UNRECOVERABLE",
+    "audit_note": "HARD_STOP_MAX_RETRIES_EXCEEDED: Transaction has reached 3 attempts (limit is 2). Processing permanently halted."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_013",
+    "user_id": "usr_99182",
+    "amount": 85000.0,
+    "failure_reason": "GATEWAY_TIMEOUT",
+    "intervention_selected": "ESCALATE_TO_HUMAN",
+    "retry_count": 0,
+    "status": "ESCALATED_HUMAN",
+    "audit_note": "COMPLIANT_ESCALATION: High-value transaction exceeding ₹50,000.00 threshold (amount: ₹85,000.00). Routed to ESCALATED_HUMAN_QUEUE."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_014",
+    "user_id": "usr_77201",
+    "amount": 140000.0,
+    "failure_reason": "B2B_OVERDUE_INVOICE",
+    "intervention_selected": "ESCALATE_TO_HUMAN",
+    "retry_count": 0,
+    "status": "ESCALATED_HUMAN",
+    "audit_note": "COMPLIANT_ESCALATION: High-value transaction exceeding ₹50,000.00 threshold (amount: ₹140,000.00). Routed to ESCALATED_HUMAN_QUEUE."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_015",
+    "user_id": "usr_33829",
+    "amount": 15000.0,
+    "failure_reason": "EXPIRED_MANDATE",
+    "intervention_selected": "ESCALATE_TO_HUMAN",
+    "retry_count": 0,
+    "status": "ESCALATED_HUMAN",
+    "audit_note": "COMPLIANT_ESCALATION: Sensitive/VIP merchant account flagged. Routed to ESCALATED_HUMAN_QUEUE for white-glove manual assistance."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_016",
+    "user_id": "usr_11928",
+    "amount": 3400.0,
+    "failure_reason": "UNKNOWN_ERROR",
+    "intervention_selected": "ESCALATE_TO_HUMAN",
+    "retry_count": 0,
+    "status": "ESCALATED_HUMAN",
+    "audit_note": "COMPLIANT_ESCALATION: Unrecognized error code detected. Routed to ESCALATED_HUMAN_QUEUE for engineering diagnosis."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_017",
+    "user_id": "usr_44012",
+    "amount": 4100.0,
+    "failure_reason": "CARD_EXPIRED",
+    "intervention_selected": "STOP_CUSTOMER_OPT_OUT",
+    "retry_count": 0,
+    "status": "UNRECOVERABLE",
+    "audit_note": "STOPPING_RULE_TRIGGERED: Outreach halted immediately due to customer opt-out. Compliant cessation of communications."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_018",
+    "user_id": "usr_55920",
+    "amount": 7800.0,
+    "failure_reason": "CHECKOUT_ABANDONED",
+    "intervention_selected": "STOP_CUSTOMER_OPT_OUT",
+    "retry_count": 0,
+    "status": "UNRECOVERABLE",
+    "audit_note": "STOPPING_RULE_TRIGGERED: Outreach halted immediately due to service cancelled. Compliant cessation of communications."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_019",
+    "user_id": "usr_66810",
+    "amount": 14200.0,
+    "failure_reason": "BANK_SERVER_DOWN",
+    "intervention_selected": "SCHEDULE_AUTO_RETRY",
+    "retry_count": 0,
+    "status": "RECOVERED",
+    "audit_note": "SCHEDULE_AUTO_RETRY: Configured 6-hour cooldown timer. Re-routed transaction via secondary gateway API switch. Re-authorization confirmed."
+  },
+  {
+    "timestamp": "2026-09-05T14:14:12Z",
+    "transaction_id": "txn_rzp_020",
+    "user_id": "usr_99341",
+    "amount": 9600.0,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "intervention_selected": "SEND_WHATSAPP_PAYMENT_LINK",
+    "retry_count": 0,
+    "status": "RECOVERED",
+    "audit_note": "SEND_WHATSAPP_PAYMENT_LINK: Dispatched dynamic 1-click Razorpay payment link via WhatsApp. Aligned with salary cycle (Day 1). Customer authorized payment."
+  }
+]

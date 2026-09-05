@@ -1,0 +1,280 @@
+[
+  {
+    "transaction_id": "txn_rzp_001",
+    "user_id": "usr_94812",
+    "amount": 3200,
+    "failure_reason": "BANK_SERVER_DOWN",
+    "retry_count": 0,
+    "created_at": "2026-09-05T10:15:30Z",
+    "merchant_id": "mer_urban_co",
+    "customer_metadata": {
+      "name": "Aarav Sharma",
+      "phone": "+919876543210",
+      "preferred_gateway": "HDFC"
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_002",
+    "user_id": "usr_73219",
+    "amount": 12450,
+    "failure_reason": "GATEWAY_TIMEOUT",
+    "retry_count": 1,
+    "created_at": "2026-09-05T10:22:15Z",
+    "merchant_id": "mer_lenskart",
+    "customer_metadata": {
+      "name": "Pooja Verma",
+      "phone": "+919811223344",
+      "preferred_gateway": "ICICI"
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_003",
+    "user_id": "usr_88204",
+    "amount": 4800,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "retry_count": 0,
+    "created_at": "2026-09-05T10:45:00Z",
+    "merchant_id": "mer_cult_fit",
+    "customer_metadata": {
+      "name": "Rohan Nair",
+      "phone": "+919712345678",
+      "salary_cycle_day": 1
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_004",
+    "user_id": "usr_45129",
+    "amount": 18990,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "retry_count": 1,
+    "created_at": "2026-09-05T11:05:22Z",
+    "merchant_id": "mer_croma",
+    "customer_metadata": {
+      "name": "Kavita Rao",
+      "phone": "+919988776655",
+      "salary_cycle_day": 7
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_005",
+    "user_id": "usr_61034",
+    "amount": 999,
+    "failure_reason": "EXPIRED_MANDATE",
+    "retry_count": 0,
+    "created_at": "2026-09-05T11:30:10Z",
+    "merchant_id": "mer_hotstar",
+    "customer_metadata": {
+      "name": "Vikram Singh",
+      "phone": "+919833445566",
+      "mandate_type": "UPI_AUTOPAY"
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_006",
+    "user_id": "usr_29481",
+    "amount": 2499,
+    "failure_reason": "CARD_EXPIRED",
+    "retry_count": 1,
+    "created_at": "2026-09-05T11:55:40Z",
+    "merchant_id": "mer_netflix",
+    "customer_metadata": {
+      "name": "Sunita Patel",
+      "phone": "+919744556677",
+      "card_last4": "4242"
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_007",
+    "user_id": "usr_90518",
+    "amount": 6750,
+    "failure_reason": "CHECKOUT_ABANDONED",
+    "retry_count": 0,
+    "created_at": "2026-09-05T12:10:05Z",
+    "merchant_id": "mer_nykaa",
+    "customer_metadata": {
+      "name": "Ananya Joshi",
+      "phone": "+919866778899",
+      "cart_items_count": 3
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_008",
+    "user_id": "usr_38472",
+    "amount": 1299,
+    "failure_reason": "CHECKOUT_ABANDONED",
+    "retry_count": 1,
+    "created_at": "2026-09-05T12:28:50Z",
+    "merchant_id": "mer_zomato_gold",
+    "customer_metadata": {
+      "name": "Deepak Mehta",
+      "phone": "+919855667788",
+      "cart_items_count": 1
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_009",
+    "user_id": "usr_10928",
+    "amount": 42000,
+    "failure_reason": "B2B_OVERDUE_INVOICE",
+    "retry_count": 0,
+    "created_at": "2026-09-05T12:50:00Z",
+    "merchant_id": "mer_zoho_partner",
+    "customer_metadata": {
+      "name": "Apex Logistics Pvt Ltd",
+      "phone": "+919822334455",
+      "invoice_id": "INV-2026-0891"
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_010",
+    "user_id": "usr_57291",
+    "amount": 38500,
+    "failure_reason": "B2B_OVERDUE_INVOICE",
+    "retry_count": 1,
+    "created_at": "2026-09-05T13:15:35Z",
+    "merchant_id": "mer_freshworks_reseller",
+    "customer_metadata": {
+      "name": "Bharat Tech Solutions",
+      "phone": "+919833221100",
+      "invoice_id": "INV-2026-0904"
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_011",
+    "user_id": "usr_82910",
+    "amount": 8500,
+    "failure_reason": "BANK_SERVER_DOWN",
+    "retry_count": 2,
+    "created_at": "2026-09-05T13:30:12Z",
+    "merchant_id": "mer_flipkart_seller",
+    "customer_metadata": {
+      "name": "Manoj Tiwari",
+      "phone": "+919811998877"
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_012",
+    "user_id": "usr_64019",
+    "amount": 5200,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "retry_count": 3,
+    "created_at": "2026-09-05T13:45:00Z",
+    "merchant_id": "mer_myntra",
+    "customer_metadata": {
+      "name": "Priyanka Sen",
+      "phone": "+919844332211"
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_013",
+    "user_id": "usr_99182",
+    "amount": 85000,
+    "failure_reason": "GATEWAY_TIMEOUT",
+    "retry_count": 0,
+    "created_at": "2026-09-05T14:02:18Z",
+    "merchant_id": "mer_tanishq_jewels",
+    "customer_metadata": {
+      "name": "Rajeshwari Singhania",
+      "phone": "+919899001122"
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_014",
+    "user_id": "usr_77201",
+    "amount": 140000,
+    "failure_reason": "B2B_OVERDUE_INVOICE",
+    "retry_count": 0,
+    "created_at": "2026-09-05T14:20:45Z",
+    "merchant_id": "mer_aws_reseller_india",
+    "customer_metadata": {
+      "name": "Kalyan Infotech LLP",
+      "phone": "+919877665544",
+      "invoice_id": "INV-2026-1022"
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_015",
+    "user_id": "usr_33829",
+    "amount": 15000,
+    "failure_reason": "EXPIRED_MANDATE",
+    "retry_count": 0,
+    "is_sensitive": true,
+    "created_at": "2026-09-05T14:40:00Z",
+    "merchant_id": "mer_razorpay_capital",
+    "customer_metadata": {
+      "name": "Priority VIP Enterprise",
+      "phone": "+919866112233",
+      "account_tier": "VIP_PLATINUM"
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_016",
+    "user_id": "usr_11928",
+    "amount": 3400,
+    "failure_reason": "UNKNOWN_ERROR",
+    "retry_count": 0,
+    "created_at": "2026-09-05T15:05:10Z",
+    "merchant_id": "mer_swiggy_instamart",
+    "customer_metadata": {
+      "name": "Nikhil Agarwal",
+      "phone": "+919833557799"
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_017",
+    "user_id": "usr_44012",
+    "amount": 4100,
+    "failure_reason": "CARD_EXPIRED",
+    "retry_count": 0,
+    "customer_opted_out": true,
+    "created_at": "2026-09-05T15:25:30Z",
+    "merchant_id": "mer_spotify_india",
+    "customer_metadata": {
+      "name": "Tanvi Deshmukh",
+      "phone": "+919811442255",
+      "opt_out_timestamp": "2026-09-05T15:20:00Z"
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_018",
+    "user_id": "usr_55920",
+    "amount": 7800,
+    "failure_reason": "CHECKOUT_ABANDONED",
+    "retry_count": 0,
+    "service_cancelled": true,
+    "created_at": "2026-09-05T15:45:15Z",
+    "merchant_id": "mer_cleartrip",
+    "customer_metadata": {
+      "name": "Arjun Kapoor",
+      "phone": "+919822119933",
+      "cancellation_ref": "CAN-8921"
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_019",
+    "user_id": "usr_66810",
+    "amount": 14200,
+    "failure_reason": "BANK_SERVER_DOWN",
+    "retry_count": 0,
+    "created_at": "2026-09-05T16:00:00Z",
+    "merchant_id": "mer_makemytrip",
+    "customer_metadata": {
+      "name": "Meera Nambiar",
+      "phone": "+919844001122"
+    }
+  },
+  {
+    "transaction_id": "txn_rzp_020",
+    "user_id": "usr_99341",
+    "amount": 9600,
+    "failure_reason": "INSUFFICIENT_FUNDS",
+    "retry_count": 0,
+    "created_at": "2026-09-05T16:20:10Z",
+    "merchant_id": "mer_uber_india",
+    "customer_metadata": {
+      "name": "Siddharth Malhotra",
+      "phone": "+919877009988",
+      "salary_cycle_day": 1
+    }
+  }
+]

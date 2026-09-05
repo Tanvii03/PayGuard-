@@ -14,7 +14,7 @@
 
 ---
 
-## 📑 Table of Contents
+##  Table of Contents
 
 1. [What Is PayGuard?](#-what-is-payguard)
 2. [Problem Statement](#-problem-statement)
@@ -34,7 +34,7 @@
 
 ---
 
-## 🛡️ What Is PayGuard?
+##  What Is PayGuard?
 
 **PayGuard** is an autonomous, rule-based revenue recovery engine built to solve the silent crisis in digital payments — **failed transactions that never get a second chance**.
 
@@ -45,7 +45,7 @@ It reads a batch of payment failures, classifies each one by its error code, app
 
 ---
 
-## 🔴 Problem Statement
+## Problem Statement
 
 Every digital payment business loses a significant portion of revenue to **silent payment failures** — transactions that fail not because the customer doesn't want to pay, but due to:
 
@@ -60,37 +60,37 @@ Every digital payment business loses a significant portion of revenue to **silen
 | `B2B_OVERDUE_INVOICE` | Corporate accounts payable delayed on enterprise invoices |
 
 ### The cost of doing nothing:
-- ❌ Revenue is permanently lost if no recovery attempt is made
-- ❌ Manual review teams are slow, inconsistent, and don't scale
-- ❌ One-size-fits-all reminders annoy customers who had a temporary issue
-- ❌ No audit trail means compliance teams are blind to what was done
-- ❌ High-value failures get the same treatment as ₹500 ones — a major risk
+-  Revenue is permanently lost if no recovery attempt is made
+-  Manual review teams are slow, inconsistent, and don't scale
+-  One-size-fits-all reminders annoy customers who had a temporary issue
+-  No audit trail means compliance teams are blind to what was done
+-  High-value failures get the same treatment as ₹500 ones — a major risk
 
 ---
 
-## ✅ Solution
+##  Solution
 
 PayGuard solves this with **four layered capabilities**:
 
-### 1. 🔍 Smart Diagnosis
+### 1.  Smart Diagnosis
 Reads each transaction's `failure_reason` code and immediately classifies it — no ambiguity, no ML inference needed. Deterministic classification means zero surprises.
 
-### 2. 🛡️ Strict Guardrails (Safety First)
+### 2.  Strict Guardrails (Safety First)
 Before any recovery action fires, four compliance guardrails are checked in strict priority order:
 1. **Stopping Rules** — Opt-outs and cancellations halt all outreach immediately
 2. **Attempt Limits** — Never retry more than 2 times (hard stop)
 3. **Compliant Escalation** — High-value (> ₹50,000), VIP, or unknown errors go straight to humans
 4. **Bounded Workflows** — Only pre-approved actions execute, nothing is invented on the fly
 
-### 3. ⚡ Deterministic Intervention Dispatch
+### 3.  Deterministic Intervention Dispatch
 Each failure code maps to exactly one recovery action. WhatsApp links for funds issues. Voice calls for expired mandates. Auto-retries for outages. No guessing.
 
-### 4. 📋 Full Auditability
+### 4.  Full Auditability
 Every decision — recovered, escalated, stopped, pending — is logged to `audit_log.json` with an ISO-8601 timestamp, intervention name, status, and a human-readable compliance note. An executive analytics report is generated on every run.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
@@ -149,7 +149,7 @@ Every decision — recovered, escalated, stopped, pending — is logged to `audi
 
 ---
 
-## 🔄 How It Works — Workflow
+##  How It Works — Workflow
 
 ```
 Transaction Failure Detected
@@ -189,7 +189,7 @@ Transaction Failure Detected
 
 ---
 
-## 🎯 Diagnosis & Intervention Matrix
+##  Diagnosis & Intervention Matrix
 
 | Failure Code | Recovery Intervention | Expected Outcome |
 |---|---|---|
@@ -204,7 +204,7 @@ Transaction Failure Detected
 
 ---
 
-## 🛡️ Operational Guardrails
+##  Operational Guardrails
 
 PayGuard enforces **4 non-negotiable guardrails** evaluated in strict priority order before any intervention fires:
 
@@ -235,7 +235,7 @@ PRIORITY 4 — INTERVENTION MATRIX
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 | Layer | Technology | Version | Purpose |
 |---|---|---|---|
@@ -254,12 +254,12 @@ PRIORITY 4 — INTERVENTION MATRIX
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Recovery/
 │
-├── 📄 recovery_agent.py          # Core autonomous recovery engine
+├──  recovery_agent.py          # Core autonomous recovery engine
 │   ├── RazorpayRecoveryAgent     # Main agent class
 │   ├── RecoveryAgentGuardrails   # Constants (max retries, thresholds)
 │   ├── RecoveryStatus            # Status constants
@@ -280,7 +280,7 @@ Recovery/
 
 ---
 
-## ⚙️ Setup & Installation
+##  Setup & Installation
 
 ### Prerequisites
 
@@ -342,7 +342,7 @@ Get-ChildItem -Name
 
 ---
 
-## 🚀 Running the Agent
+##  Running the Agent
 
 ### Run the Recovery Pipeline (Batch Mode)
 
@@ -394,7 +394,7 @@ The dashboard will automatically load `audit_log.json` and display all metrics.
 
 ---
 
-## 🧪 Running Tests
+##  Running Tests
 
 ```bash
 python test_recovery_agent.py
@@ -439,7 +439,7 @@ OK
 
 ---
 
-## 📋 Audit Log Schema
+##  Audit Log Schema
 
 Every transaction evaluated produces one JSON entry in `audit_log.json`:
 
@@ -473,7 +473,7 @@ Every transaction evaluated produces one JSON entry in `audit_log.json`:
 
 ---
 
-## 📊 Executive Report Sample
+##  Executive Report Sample
 
 ```
 ──────────────────────────────────────────────────────────────────────────
@@ -503,7 +503,7 @@ Every transaction evaluated produces one JSON entry in `audit_log.json`:
 
 ---
 
-## 🖥️ Dashboard Features
+##  Dashboard Features
 
 The interactive web dashboard (`http://localhost:8080`) includes:
 
@@ -516,20 +516,20 @@ The interactive web dashboard (`http://localhost:8080`) includes:
 | **Audit Log** | Plain-text formatted executive report with one-click copy |
 
 Additional features:
-- 🔍 **Global search** across all transactions
-- 📥 **Export** audit log as JSON
-- ➕ **Add simulated transactions** to the live audit log
-- 🔄 **Re-run batch** pipeline from the browser
+-  **Global search** across all transactions
+-  **Export** audit log as JSON
+-  **Add simulated transactions** to the live audit log
+-  **Re-run batch** pipeline from the browser
 
 ---
 
-## 📄 License
+##  License
 
 MIT License — free to use, modify, and distribute.
 
 ---
 
-## 🙏 Acknowledgements
+##  Acknowledgements
 
 Built as a demonstration of compliant, deterministic AI-assisted revenue recovery workflows. Inspired by real-world payment failure patterns in the Indian digital payments ecosystem.
 
